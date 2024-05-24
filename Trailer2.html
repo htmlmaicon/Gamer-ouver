@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+        height: 100vh; /* Define a altura do corpo como 100% da altura da viewport */
+        
+        background-image: url(assets/imagens/fundo1.jpeg);
+        background-size: cover; /* Faz a imagem cobrir completamente o fundo */
+        background-repeat: no-repeat; /* Evita repetição da imagem */
+        background-position: center; /* Centraliza a imagem no corpo */
+         
+        }
+
+        .container {
+        display: flex;
+        justify-content: center; /* Centraliza horizontalmente */
+        align-items: center; /* Centraliza verticalmente */
+        height: 100vh; /* Define a altura do container para ocupar a altura total da tela */
+        }
+
+        h1{
+            color: aliceblue;
+            text-align: center;
+        }
+
+
+    </style>
+    <title>Trailer</title>
+</head>
+<body>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
+    <h1>Trailer GTA 6</h1>
+    <div class="container">
+        <iframe width="90%" height="90%" src="https://www.youtube.com/embed/QdBZY2fkU-0?si=ZvqcJG-DWZV2SHOf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+</body>
+</html>
